@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api-service-dev
-          image: harbor.kyojs.com/vegan/api-server-dev:c3d411b5
+          image: harbor.kyojs.com/vegan/api-server-dev:b089a241
           imagePullPolicy: Always
           livenessProbe:
             httpGet:
