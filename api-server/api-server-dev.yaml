@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: api-service-dev
   namespace: vegan
-  annotations:
-    notifications.argoproj.io/subscribe.on_deployed.discord_webhook: ""
 spec:
   replicas: 3
   revisionHistoryLimit: 0
