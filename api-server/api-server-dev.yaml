@@ -4,7 +4,7 @@ metadata:
   name: api-service-dev
   namespace: vegan
 spec:
-  replicas: 1
+  replicas: 3
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api-service-dev
-          image: harbor.kyojs.com/vegan/api-server-dev:b67aadf9
+          image: harbor.kyojs.com/vegan/api-server-dev:614a512c
           imagePullPolicy: Always
           livenessProbe:
             httpGet:
@@ -56,7 +56,7 @@ metadata:
   namespace: vegan
 spec:
   maxReplicas: 6
-  minReplicas: 1
+  minReplicas: 3
   metrics:
     - resource:
         name: cpu
